@@ -1,11 +1,6 @@
 ## Editor De Texto com Dicionário | Projeto 2 - Algoritmos e Estruturas de Dados II
 Implementação de um editor de texto com dicionário de palavras
 
-#### Download do .NET Framework: https://dotnet.microsoft.com/en-us/ 
-
-Para rodar o projeto: dotnet run
-
-
 ----------------------
 
 1. Implementar em C#;
