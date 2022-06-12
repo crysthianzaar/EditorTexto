@@ -84,5 +84,16 @@ namespace EditorTexto
         {
 
         }
+
+        private void validarPalavrasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Carrego o meu dicionário de palavras
+
+            // Carrego a informações digitadas no programa
+
+            // Busco e valido através de tabela hash
+
+            // Retorno os valores do richtext que existem na tabela sublinhados 
+        }
     }
 }

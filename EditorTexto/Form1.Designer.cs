@@ -46,12 +46,13 @@
             this.colarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.selecionarTudoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sobreOProjetoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.validarPalavrasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
-            this.sobreOProjetoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,7 +62,8 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.arquivoToolStripMenuItem,
             this.editarToolStripMenuItem,
-            this.sobreOProjetoToolStripMenuItem});
+            this.sobreOProjetoToolStripMenuItem,
+            this.validarPalavrasToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 28);
@@ -86,7 +88,7 @@
             // 
             this.novaToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("novaToolStripMenuItem.Image")));
             this.novaToolStripMenuItem.Name = "novaToolStripMenuItem";
-            this.novaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.novaToolStripMenuItem.Size = new System.Drawing.Size(132, 26);
             this.novaToolStripMenuItem.Text = "&Nova";
             this.novaToolStripMenuItem.Click += new System.EventHandler(this.novaToolStripMenuItem_Click);
             // 
@@ -141,27 +143,27 @@
             // desfazerToolStripMenuItem
             // 
             this.desfazerToolStripMenuItem.Name = "desfazerToolStripMenuItem";
-            this.desfazerToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.desfazerToolStripMenuItem.Size = new System.Drawing.Size(199, 26);
             this.desfazerToolStripMenuItem.Text = "&Desfazer";
             this.desfazerToolStripMenuItem.Click += new System.EventHandler(this.desfazerToolStripMenuItem_Click);
             // 
             // refazerToolStripMenuItem
             // 
             this.refazerToolStripMenuItem.Name = "refazerToolStripMenuItem";
-            this.refazerToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.refazerToolStripMenuItem.Size = new System.Drawing.Size(199, 26);
             this.refazerToolStripMenuItem.Text = "&Refazer";
             this.refazerToolStripMenuItem.Click += new System.EventHandler(this.refazerToolStripMenuItem_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(221, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(196, 6);
             // 
             // recortarToolStripMenuItem
             // 
             this.recortarToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("recortarToolStripMenuItem.Image")));
             this.recortarToolStripMenuItem.Name = "recortarToolStripMenuItem";
-            this.recortarToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.recortarToolStripMenuItem.Size = new System.Drawing.Size(199, 26);
             this.recortarToolStripMenuItem.Text = "Recor&tar";
             this.recortarToolStripMenuItem.Click += new System.EventHandler(this.recortarToolStripMenuItem_Click);
             // 
@@ -169,7 +171,7 @@
             // 
             this.copiarToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("copiarToolStripMenuItem.Image")));
             this.copiarToolStripMenuItem.Name = "copiarToolStripMenuItem";
-            this.copiarToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.copiarToolStripMenuItem.Size = new System.Drawing.Size(199, 26);
             this.copiarToolStripMenuItem.Text = "&Copiar";
             this.copiarToolStripMenuItem.Click += new System.EventHandler(this.copiarToolStripMenuItem_Click);
             // 
@@ -177,21 +179,36 @@
             // 
             this.colarToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("colarToolStripMenuItem.Image")));
             this.colarToolStripMenuItem.Name = "colarToolStripMenuItem";
-            this.colarToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.colarToolStripMenuItem.Size = new System.Drawing.Size(199, 26);
             this.colarToolStripMenuItem.Text = "&Colar";
             this.colarToolStripMenuItem.Click += new System.EventHandler(this.colarToolStripMenuItem_Click);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(221, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(196, 6);
             // 
             // selecionarTudoToolStripMenuItem
             // 
             this.selecionarTudoToolStripMenuItem.Name = "selecionarTudoToolStripMenuItem";
-            this.selecionarTudoToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.selecionarTudoToolStripMenuItem.Size = new System.Drawing.Size(199, 26);
             this.selecionarTudoToolStripMenuItem.Text = "Selecionar &Tudo";
             this.selecionarTudoToolStripMenuItem.Click += new System.EventHandler(this.selecionarTudoToolStripMenuItem_Click);
+            // 
+            // sobreOProjetoToolStripMenuItem
+            // 
+            this.sobreOProjetoToolStripMenuItem.Name = "sobreOProjetoToolStripMenuItem";
+            this.sobreOProjetoToolStripMenuItem.Size = new System.Drawing.Size(127, 24);
+            this.sobreOProjetoToolStripMenuItem.Text = "Sobre o Projeto";
+            this.sobreOProjetoToolStripMenuItem.Click += new System.EventHandler(this.sobreOProjetoToolStripMenuItem_Click);
+            // 
+            // validarPalavrasToolStripMenuItem
+            // 
+            this.validarPalavrasToolStripMenuItem.BackColor = System.Drawing.Color.LightGreen;
+            this.validarPalavrasToolStripMenuItem.Name = "validarPalavrasToolStripMenuItem";
+            this.validarPalavrasToolStripMenuItem.Size = new System.Drawing.Size(134, 24);
+            this.validarPalavrasToolStripMenuItem.Text = "Verificar Palavras";
+            this.validarPalavrasToolStripMenuItem.Click += new System.EventHandler(this.validarPalavrasToolStripMenuItem_Click);
             // 
             // richTextBox1
             // 
@@ -206,13 +223,6 @@
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
-            // 
-            // sobreOProjetoToolStripMenuItem
-            // 
-            this.sobreOProjetoToolStripMenuItem.Name = "sobreOProjetoToolStripMenuItem";
-            this.sobreOProjetoToolStripMenuItem.Size = new System.Drawing.Size(127, 24);
-            this.sobreOProjetoToolStripMenuItem.Text = "Sobre o Projeto";
-            this.sobreOProjetoToolStripMenuItem.Click += new System.EventHandler(this.sobreOProjetoToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -256,5 +266,6 @@
         private ColorDialog colorDialog1;
         private FontDialog fontDialog1;
         private ToolStripMenuItem sobreOProjetoToolStripMenuItem;
+        private ToolStripMenuItem validarPalavrasToolStripMenuItem;
     }
 }
