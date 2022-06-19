@@ -1,3 +1,6 @@
+using System.Collections;
+using System.Text;
+
 namespace EditorTexto
 {
     public partial class Form1 : Form
@@ -8,8 +11,7 @@ namespace EditorTexto
         }
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
-        {
-            
+        {   
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -73,8 +75,6 @@ namespace EditorTexto
             richTextBox1.SelectAll();
         }
 
-
-
         private void sobreOProjetoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Trabalho de AED II - Crysthian e Lucas");
@@ -87,13 +87,24 @@ namespace EditorTexto
 
         private void validarPalavrasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            // Carrego o meu dicionário de palavras
+            // Carregar o dicionário de palavras
+            var dicionario = File.ReadAllLines("dicionario.txt", Encoding.UTF8);
+
+            // Transforma em tabela Hash:
+            Hashtable tabela = new Hashtable();
 
             // Carrego a informações digitadas no programa
+            string text = richTextBox1.Text.ToString();
 
             // Busco e valido através de tabela hash
 
-            // Retorno os valores do richtext que existem na tabela sublinhados 
+            // Retorno o richtext sublinhando às palavras que existem no dicionário 
+            richTextBox1.Text = text;
+
+            if (richTextBox1.Text == "oi")
+            {
+                richTextBox1.SelectionColor = Color.Red;
+            }
         }
     }
 }
