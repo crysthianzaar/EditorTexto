@@ -1,5 +1,5 @@
-## Editor De Texto com Dicionário | Projeto 2 - Algoritmos e Estruturas de Dados II
-Implementação de um editor de texto com dicionário de palavras
+## Projeto 2 - Algoritmos e Estruturas de Dados II
+### Implementação de um editor de texto com dicionário de palavras
 
 ----------------------
 
