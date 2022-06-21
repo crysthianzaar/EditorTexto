@@ -14,3 +14,7 @@ incluir ou não cada palavra no dicionário;
 7. O dicionário deverá ser armazenado em arquivo físico, de forma a poder ser reutilizado entre várias execuções
 do programa.
 8. A forma de armazenamento ficará à escolha do grupo;
+----------------------
+
+* Dicionário usado: [Aqui](https://github.com/crysthianzaar/EditorTexto/blob/master/EditorTexto/bin/Debug/net6.0-windows/dicionario.txt)
+* Form1 com as implementações realizadas: [Aqui](https://github.com/crysthianzaar/EditorTexto/blob/master/EditorTexto/Form1.cs)
